@@ -1,61 +1,63 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './index.css'
+import Body from './Components/Body';
+import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
 import Header from './Components/Header';
 import About from './Components/About';
-import Home from './Components/Home';
+import Help from './Components/Help';
 import WebDesign from './Components/WebDesign';
-import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Contact from './Components/Contact';
 import Blog from './Components/Blog';
-import Help from './Components/Help'
-import Resources from './Components/Resources'
+import Resources from './Components/Resources';
+import Contact from './Components/Contact';
 
-const AppLayout = () => {
+function App() {
   return (
     <div>
-    <Header />
-    <Home />
-     <Outlet />
+      <Header />
+      <Outlet />
     </div>
-  )
-}
+  );
+};
 
 const appRouter = createBrowserRouter([
   {
-     path: "/",
-     element: <AppLayout />,
-     children: [
-       {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <Body />
+      },
+      {  
         path: "/about",
-        element: <About />,
-       },
-       {
+        element: <About />
+      },
+      {
         path: "/help",
         element: <Help />,
-       },
-       {
+      },
+      {
         path: "/webdesign",
-        element: <WebDesign />,
-       },
-       {
+        element: <WebDesign />
+      },
+      {
         path: "/blog",
         element: <Blog />,
-       },
-       {
+      },
+      {
         path: "/contact",
         element: <Contact />,
-       },
-       {
+      },
+      {
         path: "/resources",
         element: <Resources />,
-       },
-      
-     ]
-  }
+      },
+    ],
+  },
 ]);
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<RouterProvider router={appRouter} />);
 
-
+export default App;
