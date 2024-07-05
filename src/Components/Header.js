@@ -19,7 +19,7 @@ const TopHeader = () => {
         <FontAwesomeIcon icon={faPinterest} className="text-gray-600 m-2" />
       </div>
       <span className="flex-grow text-center">
-        CALLING ALL MOTHER-HUSTLERS, BOSS BABES, AND FEMALE ENTREPRENEURS!
+        WELCOME TO BLOOM AND GLOW WORLD, SHINE LIKE THE WHOLE UNIVERSE IS YOURS✨!
       </span>
       <div className="flex items-center space-x-2">
         <FontAwesomeIcon icon={faUser} />
@@ -72,7 +72,7 @@ const Header = () => {
             </Link>
           </div>
           <div className="flex-1 text-center p-2 border-r border-gray-300">
-            <h1 className="text-4xl font-bold style_text" >Bloom And Glow</h1>
+            <h1 className="text-5xl font-bold style_text" >Bloom And Glow</h1>
           </div>
           <div className="flex-1 text-center p-2">
             <span className="text-gray-600">Free monthly printable!</span>
