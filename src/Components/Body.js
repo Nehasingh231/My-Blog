@@ -15,10 +15,8 @@ const Body = () => {
         <p className="text-gray-700 mb-4">
           Villages typically have a small population.Villages are basically rely on agriculture,fishing, or crafts.
           Folk music, dance, and art forms are an integral part of village culture.
-          Villages are such a peaceful,brotherhood type place, before villages are not that much developed but these days villages are developed as well as towns.
-
         </p>
-        <span className="text-sm text-gray-500">5 views</span>
+        <span className="text-sm text-gray-500">55 views</span>
       </div>
       <div className="card bg-white p-4 shadow-md rounded-lg">
         <img
