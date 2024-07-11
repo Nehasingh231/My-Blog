@@ -26,10 +26,11 @@ const Body = () => {
         />
         <h3 className="text-lg font-bold  mb-2 heading_style">Let's Talk about Nature. </h3>
         <p className="text-gray-700 mb-4">
-          Committing to a color scheme for your biz can be a bit intimidating
-          but is SO important in building brand identity.
+          Nature has power to shape our environment and climate,offer beauty, support life and growth and many more.
+          it gives us fresh air and clean water, It has ability to heal you.
+          To save our Nature we should plant more trees to make our life beautiful and stress free.
         </p>
-        <span className="text-sm text-gray-500">10 views</span>
+        <span className="text-sm text-gray-500">100views</span>
       </div>
       <div className="card bg-white p-4 shadow-md rounded-lg">
         <img
@@ -41,9 +42,10 @@ const Body = () => {
            Let's Discuss about this delicious Food!
         </h3>
         <p className="text-gray-700 mb-4">
-          Is it really even summer if you haven't baked chocolate chip cookies?
+        Food, The universal language that brings us all together!
+        Food is Nourishment for our bodies, - A symbol of love, care, and hospitality, A means of expression and creativity.
         </p>
-        <span className="text-sm text-gray-500">10 views</span>
+        <span className="text-sm text-gray-500">65 views</span>
       </div>
     </div>
   );

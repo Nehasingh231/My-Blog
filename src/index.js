@@ -10,6 +10,7 @@ import WebDesign from './Components/WebDesign';
 import Blog from './Components/Blog';
 import Resources from './Components/Resources';
 import Contact from './Components/Contact';
+import Error from './Components/Error';
 
 function App() {
   return (
@@ -54,6 +55,7 @@ const appRouter = createBrowserRouter([
         element: <Resources />,
       },
     ],
+     errorElement: <Error />
   },
 ]);
 

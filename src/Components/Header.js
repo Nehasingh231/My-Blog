@@ -13,10 +13,10 @@ const TopHeader = () => {
   return (
     <div className="bg-gray-100 text-black py-2 border-b  border-gray-300 flex justify-between items-center">
       <div className="flex space-x-4">
-        <FontAwesomeIcon icon={faFacebook} className="text-gray-600 m-2" />
-        <FontAwesomeIcon icon={faInstagram} className="text-gray-600 m-2" />
-        <FontAwesomeIcon icon={faTwitter} className="text-gray-600 m-2" />
-        <FontAwesomeIcon icon={faPinterest} className="text-gray-600 m-2" />
+      <Link to=""> <FontAwesomeIcon icon={faFacebook} className="text-gray-600 m-2" /> </Link>
+      <Link to=""> <FontAwesomeIcon icon={faInstagram} className="text-gray-600 m-2" />  </Link>
+      <Link to=""> <FontAwesomeIcon icon={faTwitter} className="text-gray-600 m-2" />  </Link>
+      <Link to=""> <FontAwesomeIcon icon={faPinterest} className="text-gray-600 m-2" />  </Link>
       </div>
       <span className="flex-grow text-center">
         WELCOME TO BLOOM AND GLOW WORLD, SHINE LIKE THE WHOLE UNIVERSE IS YOURS✨!
