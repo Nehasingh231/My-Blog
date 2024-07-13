@@ -1,6 +1,12 @@
 import React from "react";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body = () => {
+  const onlineStatus = useOnlineStatus();
+   if(onlineStatus === false){          
+     return <h1>offline</h1>
+   }
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
       <div className="card bg-white p-4 shadow-md rounded-lg">

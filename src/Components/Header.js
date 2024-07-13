@@ -9,7 +9,11 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 
+import useOnlineStatus from "../utils/useOnlineStatus";
+
 const TopHeader = () => {
+   
+
   return (
     <div className="bg-gray-100 text-black py-2 border-b  border-gray-300 flex justify-between items-center">
       <div className="flex space-x-4">
@@ -26,15 +30,20 @@ const TopHeader = () => {
         <Link to="" className="text-gray-600">
           Log In
         </Link>
+          
       </div>
     </div>
   );
 };
 
 const SubHeader = () => {
+  const onlineStatus = useOnlineStatus();
   return (
     <div className="bg-gray-100 py-2 border-b border-gray-300">
       <div className="container mx-auto flex justify-center space-x-8">
+      <Link to="/" className="text-gray-600 hover:text-gray-800">
+          online staus: {onlineStatus ? "✅" : "🔴"}
+        </Link>
         <Link to="/webdesign" className="text-gray-600 hover:text-gray-800">
           WEB DESIGN
         </Link>
