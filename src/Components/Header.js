@@ -10,10 +10,10 @@ import {
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 import useOnlineStatus from "../utils/useOnlineStatus";
+import ChatButton from "./ChatButton";
 
 const TopHeader = () => {
    
-
   return (
     <div className="bg-gray-100 text-black py-2 border-b  border-gray-300 flex justify-between items-center">
       <div className="flex space-x-4">
@@ -62,6 +62,9 @@ const SubHeader = () => {
         <Link to="/contact" className="text-gray-600 hover:text-gray-800">
           CONTACT
         </Link>
+        <Link to="/shopmart" className="text-gray-600 hover:text-gray-800">
+          SHOPMART
+        </Link>
       </div>
     </div>
   );
@@ -91,8 +94,10 @@ const Header = () => {
             </Link>
           </div>
         </div>
-      </header>
+    </header>
       <SubHeader />
+      <ChatButton />
+    
     </div>
   );
 };

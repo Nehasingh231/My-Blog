@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css'
 import Body from './Components/Body';
@@ -11,6 +11,10 @@ import Blog from './Components/Blog';
 import Resources from './Components/Resources';
 import Contact from './Components/Contact';
 import Error from './Components/Error';
+import ChatButton from './Components/ChatButton';
+// import ShopMart from './Components/ShopMart';
+
+ const ShopMart = lazy(() => import('./Components/ShopMart'));
 
 function App() {
   return (
@@ -53,6 +57,18 @@ const appRouter = createBrowserRouter([
       {
         path: "/resources",
         element: <Resources />,
+      },
+      {
+        path: "/chatbutton",
+        element: <ChatButton />,
+      },
+      {
+        path: "/shopmart",
+        element: (
+          <Suspense fallback={<h1>its loading wait......</h1>}>
+          <ShopMart />
+          </Suspense>
+        ),
       },
     ],
      errorElement: <Error />
