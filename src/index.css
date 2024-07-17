@@ -6,6 +6,35 @@
 @tailwind components;
 @tailwind utilities;
 
+.style:hover{
+  transform: scale(0.9); /* Scale down to 80% of its original size */
+  transition: transform 0.3s ease-out; /* Smooth transition effect */
+}
+
+.link:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg) scale(1);
+  }
+  to {
+    transform: rotate(50deg) scale(1.5);
+  }
+}
+
+
+.icon:hover {
+  animation: rotate 1s infinite linear;
+  transition: color 0.3s ease;
+  transform: scale(1.5);
+  transition: transform 0.3s ease;
+}
+
+
 .style_text{
    
      font-family: "Great Vibes", cursive;
@@ -13,3 +42,15 @@
 .heading_style{
     font-family: "Syne", sans-serif;
 }
+.message {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+    word-break: break-word;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
