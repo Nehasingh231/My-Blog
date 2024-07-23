@@ -10,6 +10,8 @@ import {
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import ChatButton from "./ChatButton";
+import LoginButton from "./LoginButton";
+import AuthContextProvider from "../utils/authcontext";
 
 
 const TopHeader = () => {
@@ -25,13 +27,9 @@ const TopHeader = () => {
       <span className="flex-grow text-center">
         WELCOME TO BLOOM AND GLOW WORLD, SHINE LIKE THE WHOLE UNIVERSE IS YOURS✨!
       </span>
-      <div className="flex items-center space-x-2">
-        <FontAwesomeIcon icon={faUser} />
-        <Link to="" className="text-gray-600">
-          Log In
-        </Link>
-          
-      </div>
+      <AuthContextProvider>
+        <LoginButton />
+      </AuthContextProvider>
     </div>
   );
 };

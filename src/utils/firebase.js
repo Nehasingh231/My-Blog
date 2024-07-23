@@ -1,25 +1,24 @@
+
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import { getFirestore } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
 
-
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyD3cxoYbzEJaTJr_i0jaeZJwuOpO-q3nSQ",
-  authDomain: "watch-wave-24b5a.firebaseapp.com",
-  projectId: "watch-wave-24b5a",
-  storageBucket: "watch-wave-24b5a.appspot.com",
-  messagingSenderId: "680447526874",
-  appId: "1:680447526874:web:75558afbb08182e9d922e3",
-  measurementId: "G-RBG5QH0S3B"
+  apiKey: "AIzaSyCS9y7xdrgFBkl7fHU0gsnFYVdiQR5xC54",
+  authDomain: "bloom-and-glow.firebaseapp.com",
+  projectId: "bloom-and-glow",
+  storageBucket: "bloom-and-glow.appspot.com",
+  messagingSenderId: "853460144418",
+  appId: "1:853460144418:web:7f6512464234eb9be1157b",
+  measurementId: "G-G04YZJYS1B"
 };
 
 // Initialize Firebase
-export const app = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+export const db = getFirestore();
+export const auth = getAuth();
 
 
